@@ -6,10 +6,14 @@
  * user guide available at https://docs.gradle.org/4.7/userguide/java_library_plugin.html
  */
 
+
 plugins {
+    id 'application'
     // Apply the java-library plugin to add support for Java Library
     id 'java-library'
 }
+
+mainClassName = 'BowlingGame'
 
 dependencies {
     // This dependency is exported to consumers, that is to say found on their compile classpath.
